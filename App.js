@@ -7,11 +7,11 @@ import {
   createBottomTabNavigator,
   createAppContainer
 } from 'react-navigation';
-import WalletScreen from './pages/WalletScreen';
-import ContractScreen from './pages/ContractScreen';
-import WithdrawScreen from './pages/WithdrawScreen';
-import ExchangeScreen from './pages/ExchangeScreen';
-import TxHistoryScreen from './pages/TxHistoryScreen';
+import WalletScreen from './src/pages/WalletScreen';
+import ContractScreen from './src/pages/ContractScreen';
+import WithdrawScreen from './src/pages/WithdrawScreen';
+import ExchangeScreen from './src/pages/ExchangeScreen';
+import TxHistoryScreen from './src/pages/TxHistoryScreen';
 
 const WalletStack = createStackNavigator(
   {
@@ -112,7 +112,7 @@ const App = createBottomTabNavigator(
           iconName = 'exchange';
         } else if (routeName === 'TxHistory') {
           iconName = 'history';
-        } 
+        }
         return <Icon
           name={iconName}
           type='font-awesome'

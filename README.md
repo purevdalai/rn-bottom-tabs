@@ -1,5 +1,5 @@
 ### Install Project
-npm install
+`npm install`
 ### Run project
-react-native start
-react-native run-android
+`react-native start`
+`react-native run-android`
