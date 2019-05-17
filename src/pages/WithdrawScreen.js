@@ -14,7 +14,7 @@ export default class WithdrawScreen extends React.Component {
       myCoins: [],
     };
   }
-  componentDidMount() {
+  componentWillMount() {
     this.fetchData();
   }
 
@@ -28,8 +28,8 @@ export default class WithdrawScreen extends React.Component {
 
   generateCoinPicker() {
     const picker = [];
-    if ( this.myCoins.length > 0 ) {
-      this.myCoins.map((coin, index) => {
+    if ( this.state.myCoins.length > 0 ) {
+      this.state.myCoins.map((coin, index) => {
         {
           index === 0 &&
           <Picker.Item label="Select coin" value={null}/>
